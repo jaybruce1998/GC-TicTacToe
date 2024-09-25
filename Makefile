@@ -100,7 +100,7 @@ $(BUILD):
 	@[ -d $@ ] || mkdir -p $@
 	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile
 	
-OBJS = main.o
+OBJS = main.o letters.o
 
 # Standard rules for compiling and linking
 all: $(OBJS)
